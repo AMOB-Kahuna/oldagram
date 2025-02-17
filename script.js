@@ -28,3 +28,30 @@ const posts = [
     }
 ]
 
+const mainContainer = document.querySelector("#main-container")
+
+for (let i = 0; i < posts.length; i++) {
+    mainContainer.innerHTML += `
+        <section class="post">
+            <div class="profile">
+                <img src="/${posts[i].avatar}" alt="profile picture" class="profile-icon">
+                <div class="name">
+                    <h1>${posts[i].name}</h1>
+                    <p>${posts[i].location}</p>
+                </div>
+            </div>
+            <img src="/${posts[i].post}" alt="" class="post-img">
+            <div class="post-detail">
+                <div class="post-interaction">
+                    <img src="/images/icon-heart.png" alt="heart" class="interact heart-icon">
+                    <img src="/images/icon-comment.png" alt="comment" class="interact comment-icon">
+                    <img src="/images/icon-dm.png" alt="message" class="interact dm-icon">
+                </div>
+                <div class="post-int-second">
+                    <p><span class="bold">${posts[i].likes} likes</span></p>
+                    <p><span class="bold">${posts[i].username}</span> ${posts[i].comment}</p>
+                </div>
+            </div>
+        </section>
+    `
+}
