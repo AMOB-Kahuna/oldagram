@@ -1,6 +1,12 @@
 body{
     margin: 0;
     padding: 0;
+    font-family: "Source Sans 3", serif;
+    font-size: 1rem;
+}
+
+h1, p{
+    margin: 0;
 }
 
 header{
@@ -11,15 +17,67 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px 10px;
+    padding: 0 30px 10px;
 }
 
 .logo{
     width: 200px;
 }
 
-.user{
-    width: 60px;
-    height: 60px;
+.user, .profile-icon{
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+}
+
+h1, .bold{
+    font-weight: 700;
+}
+
+h1{
+    font-size: 1.4rem;
+}
+
+p{
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.post-img{
+    width: 600px;
+}
+
+.post-interaction{
+    display: flex;
+    padding: 10px;
+    gap: 20px;
+}
+
+.interact{
+    width: 30px;
+}
+
+.heart.icon{
+    background-color: red;
+}
+
+.post-int-second{
+    padding: 0px 15px 15px;
+}
+
+.bold{
+    line-height: 40px;
 }
